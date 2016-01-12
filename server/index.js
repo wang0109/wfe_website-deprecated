@@ -19,9 +19,6 @@ var config = require('./config.js'), //config file contains all tokens and other
 var app = express();
 
 //===============PASSPORT===============
-
-//This section will contain our work with Passport
-//===============PASSPORT=================
 // Use the LocalStrategy within Passport to login/”signin” users.
 passport.use('local-signin', new LocalStrategy(
   {passReqToCallback : true}, //allows us to pass back the request to the callback
@@ -67,6 +64,16 @@ passport.use('local-signup', new LocalStrategy(
   }
 ));
 
+// Passport session setup.
+passport.serializeUser(function(user, done) {
+  console.log("serializing " + user.username);
+  done(null, user);
+});
+
+passport.deserializeUser(function(obj, done) {
+  console.log("deserializing " + obj);
+  done(null, obj);
+});
 //===============EXPRESS================
 // Configure Express
 app.use(logger('combined'));
