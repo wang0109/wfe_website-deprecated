@@ -7,11 +7,15 @@ Starting with: https://orchestrate.io/blog/2014/06/26/build-user-authentication-
 
 Run
 ---
+```
 node server/index.js
+```
 or use "nodemon" in place of node, which auto restarts server when source codes change
 
-To install nodemon: sudo npm -g install nodemon
-
+To install nodemon: 
+```
+sudo npm -g install nodemon
+```
 AWS
 ---
 To open web port: http://stackoverflow.com/questions/5004159/opening-port-80-ec2-amazon-web-services/10454688#10454688
@@ -36,5 +40,7 @@ Roadmap
 3. Role management
 4. Files searching
 5. Video/Audio playing
+6. 2-FA
+7. Annotation collaboration
 
 
