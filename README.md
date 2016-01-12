@@ -5,6 +5,10 @@ Development
 ---
 Starting with: https://orchestrate.io/blog/2014/06/26/build-user-authentication-with-node-js-express-passport-and-orchestrate/
 
+Run
+---
+node server/index.js
+
 Roadmap
 ---
 1. User auth
@@ -12,3 +16,5 @@ Roadmap
 3. Role management
 4. Files searching
 5. Video/Audio playing
+
+
