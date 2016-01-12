@@ -8,6 +8,9 @@ Starting with: https://orchestrate.io/blog/2014/06/26/build-user-authentication-
 Run
 ---
 node server/index.js
+or use "nodemon" in place of node, which auto restarts server when source codes change
+
+To install nodemon: sudo npm -g install nodemon
 
 AWS
 ---
@@ -17,6 +20,11 @@ Login:
 ssh -i wfe.pem ubuntu@ec2-52-32-38-91.us-west-2.compute.amazonaws.com
 
 Key is sent via email.
+
+Issues
+---
+Fix Ubuntu nodemon "cannot find node" issue: The reason is that node is called nodejs on Ubuntu, just do this to fix:
+sudo ln -s /usr/bin/nodejs /usr/local/bin/node
 
 Roadmap
 ---
