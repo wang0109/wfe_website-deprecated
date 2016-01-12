@@ -21,6 +21,9 @@ ssh -i wfe.pem ubuntu@ec2-52-32-38-91.us-west-2.compute.amazonaws.com
 
 Key is sent via email.
 
+Online access:
+http://ec2-52-32-38-91.us-west-2.compute.amazonaws.com:5000/
+
 Issues
 ---
 Fix Ubuntu nodemon "cannot find node" issue: The reason is that node is called nodejs on Ubuntu, just do this to fix:
