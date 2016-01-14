@@ -33,6 +33,11 @@ Issues
 Fix Ubuntu nodemon "cannot find node" issue: The reason is that node is called nodejs on Ubuntu, just do this to fix:
 sudo ln -s /usr/bin/nodejs /usr/local/bin/node
 
+TODO
+----
+1.move to UW domain
+2.show controlled access to s2 objects (download/view files)
+
 Roadmap
 ---
 1. User auth
