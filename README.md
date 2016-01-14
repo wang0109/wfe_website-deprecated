@@ -48,6 +48,7 @@ Database schema design
 1. study has sub-studies
 2. permission, per person/group, per study
 3. per study, a set of media files
+4. data: research papers, transcripts, video, audio, picture
 
 Use case
 ----
