@@ -43,4 +43,12 @@ Roadmap
 6. 2-FA
 7. Annotation collaboration
 
+Database schema design
+---
+1. study has sub-studies
+2. permission, per person/group, per study
+3. per study, a set of media files
 
+Use case
+----
+1. oceangraphers: sensors under sea (see COVE ocean UW project)
