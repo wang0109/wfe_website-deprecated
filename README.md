@@ -58,3 +58,7 @@ Database schema design
 Use case
 ----
 1. oceangraphers: sensors under sea (see COVE ocean UW project)
+
+Dev ideas
+---
+1. To control access fo S3 objects, we could use the same logic to control access to password data
