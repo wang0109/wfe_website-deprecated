@@ -40,8 +40,8 @@ sudo ln -s /usr/bin/nodejs /usr/local/bin/node
 
 TODO
 ---
-1.move to UW domain
-2.show controlled access to s3 objects (download/view files)
+1. move to UW domain
+2. show controlled access to s3 objects (download/view files)
 
 Roadmap
 ---
