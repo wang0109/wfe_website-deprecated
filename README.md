@@ -8,10 +8,16 @@ https://orchestrate.io/blog/2014/06/26/build-user-authentication-with-node-js-ex
 
 Run
 ---
+Install nodejs on Ubuntu: use `apt-get`:
+```
+sudo apt-get install nodejs
+```
+To run the node server:
 ```
 node server/index.js
 ```
-or use `nodemon` in place of `node`, which auto restarts server when source codes change
+or use `nodemon` in place of `node`, which auto restarts server when source codes changes (recommended).
+There is no need to use apache or nginx web server for now, the node built-in web server is pretty stable and performant.
 
 To install nodemon: 
 ```
@@ -19,6 +25,8 @@ sudo npm -g install nodemon
 ```
 AWS
 ---
+By default, any EC2 instance server has restricted exposure of ports, so you cannot access from internet out of the box.
+
 To open web port: 
 http://stackoverflow.com/questions/5004159/opening-port-80-ec2-amazon-web-services/10454688#10454688
 
@@ -26,9 +34,12 @@ Login:
 ```
 ssh -i wfe.pem ubuntu@ec2-52-32-38-91.us-west-2.compute.amazonaws.com
 ```
-Key is sent via email.
+You could use Putty on Windows instead of `ssh`.
 
-Online access:
+
+The pem key for this particular test EC2 was sent via email (generated within Wei's personal AWS account). To use our UW account, generate key from that account.
+
+Online access (testing only, EC2 from Wei's account):
 http://ec2-52-32-38-91.us-west-2.compute.amazonaws.com:5000/
 
 Issues
@@ -37,6 +48,10 @@ Fix Ubuntu nodemon "cannot find node" issue: The reason is that node is called n
 ```
 sudo ln -s /usr/bin/nodejs /usr/local/bin/node
 ```
+To keep server from exiting when you exit your terminal, use this trick:
+
+Use a `nohup` prefix to keep it running in the background:
+http://www.cyberciti.biz/tips/nohup-execute-commands-after-you-exit-from-a-shell-prompt.html
 
 TODO
 ---
