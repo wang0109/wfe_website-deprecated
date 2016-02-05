@@ -132,7 +132,7 @@ app.post('/local-reg', passport.authenticate('local-signup', {
 );
 
 //sends the request through our local login/signin strategy, and if successful takes user to homepage, otherwise returns then to signin page
-app.post('/login', passport.authenticate('local-signin', { 
+app.post('/login', passport.authenticate('local-signin', {
   successRedirect: '/',
   failureRedirect: '/signin'
   })
@@ -151,4 +151,3 @@ app.get('/logout', function(req, res){
 var port = process.env.PORT || 5000; //select your port or let it pull from your .env file
 app.listen(port);
 console.log("listening on " + port + "!");
-
