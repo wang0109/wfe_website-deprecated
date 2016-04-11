@@ -1,0 +1,14 @@
+NOTE:
+
+!!!! DO NOT EVER RESTART OR SHUTDOWN THE FREE TIER EC2 !!!!
+Because, any writes to the hard drive will be reset upon restart..
+
+
+AWS Free Tier server: 
+
+ubuntu@ec2-52-32-38-91.us-west-2.compute.amazonaws.com
+
+
+PEM (already sent in email, will also try to upload to DropBox):
+
+wfe.pem
