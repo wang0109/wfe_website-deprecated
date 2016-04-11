@@ -32,7 +32,7 @@ mysql -u root -p -e "create database main character set utf8;"
 
 
 Example:
-mysql -u root nitm < nitm.sql
+mysql -u root -p < nitm.sql
 
 
 Poor man MySQL backup
