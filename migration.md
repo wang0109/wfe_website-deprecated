@@ -1,3 +1,9 @@
+AWS Free Tier MySQL user/pass:
+
+User: root
+Pass: root
+
+
 Dump sqlite3 db to a file
 ===
 
@@ -17,6 +23,16 @@ Example usage:
 mysql -u user -p -e "create database redmine character set utf8;" 
 sqlite3 production.db .dump | sqlite3-to-mysql.py | mysql -u user -p redmine
 ```
+
+Import dump to MySQL
+====
+
+Remember to create the database first:
+mysql -u root -p -e "create database main character set utf8;" 
+
+
+Example:
+mysql -u root nitm < nitm.sql
 
 
 Poor man MySQL backup
