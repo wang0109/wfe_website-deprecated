@@ -1,0 +1,7 @@
+2015-10-26
+- incremental scanning for part of a hard drive (white list)
+- update/redo a portion like "2014-02-12"
+- add more date without re-scan all over (incremental)
+- a whilelist - (ignore analysis dir)
+- unit testing (python unittest?)
+- present db via web (django? node.js? php?)
